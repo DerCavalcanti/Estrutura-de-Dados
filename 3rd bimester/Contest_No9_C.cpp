@@ -12,7 +12,8 @@ void AddEdge(int u, int v, int w){
 void Djikstra(int start){
 	priority_queue <tuple<int,int>>pq;
 	vector<int>dist(dist+1, max_int);
-	
+	dist[start] = 0;
+	pq.push({0,start});
 }
 
 int main(){
